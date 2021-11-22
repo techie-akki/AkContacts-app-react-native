@@ -21,7 +21,7 @@ const RegisterComponent = ({onSubmit, onChange, form, error, errors}) => {
         <Text style={styles.title}>Welcome to AkContacts</Text>
         <Text style={styles.subTitle}>Create an Account</Text>
 
-        <View form style={styles.form}>
+        <View style={styles.form}>
           <Input
             label="Username"
             iconPosition="right"
