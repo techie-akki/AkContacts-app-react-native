@@ -39,7 +39,6 @@ const RegisterComponent = () => {
         <Text style={styles.title}>Welcome to AkContacts</Text>
         <Text style={styles.subTitle}>Create an Account</Text>
 
-<<<<<<< HEAD
         <View>
           <Formik
             initialValues={userInfo} //fields & initial value of the fields
@@ -105,58 +104,6 @@ const RegisterComponent = () => {
               </View>
             )}
           </Formik>
-=======
-        <View style={styles.form}>
-          <Input
-            label="Username"
-            iconPosition="right"
-            placeholder="Enter Username"
-            onChangeText={value => {
-              onChange({name: 'userName', value});
-            }}
-            error={errors.userName}
-          />
-          <Input
-            label="First Name"
-            iconPosition="right"
-            placeholder="Enter First Name"
-            onChangeText={value => {
-              onChange({name: 'firstName', value});
-            }}
-            error={errors.firstName}
-          />
-          <Input
-            label="Last Name"
-            iconPosition="right"
-            placeholder="Enter Last Name"
-            onChangeText={value => {
-              onChange({name: 'lastName', value});
-            }}
-            error={errors.lastName}
-          />
-          <Input
-            label="Email"
-            iconPosition="right"
-            placeholder="Enter Email"
-            onChangeText={value => {
-              onChange({name: 'email', value});
-            }}
-            error={errors.email}
-          />
-          <Input
-            label="Password"
-            placeholder="Enter Password"
-            secureTextEntry={true}
-            icon={<Text>Show</Text>}
-            iconPosition="right"
-            onChangeText={value => {
-              onChange({name: 'password', value});
-            }}
-            error={errors.password}
-          />
-          <CustomButton onPress={onSubmit} title="Submit" primary />
->>>>>>> 18977cac0feac6fc07ba2aab63308740a4a7fcfd
-
           <View style={styles.createSection}>
             <Text style={styles.infoText}>Already have an Account?</Text>
             <TouchableOpacity
