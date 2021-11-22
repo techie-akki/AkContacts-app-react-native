@@ -7,10 +7,32 @@ const Register = () => {
 
   const onChange = ({name, value}) => {
     setForm({...form, [name]: value});
+    if (value !== '') {
+      if (name === 'password') {
+        if (value.length < 8) {
+          setErrors(prev => {
+            return {...prev, [name]: 'This field needs min 6 characters'};
+          });
+        } else {
+          setErrors(prev => {
+            return {...prev, [name]: null};
+          });
+        }
+      } else {
+        setErrors(prev => {
+          return {...prev, [name]: null};
+        });
+      }
+    } else {
+      setErrors(prev => {
+        return {...prev, [name]: 'This field is required'};
+      });
+    }
   };
 
   const onSubmit = () => {
     //validation
+
     console.log('form: >> ', form);
 
     if (!form.userName) {

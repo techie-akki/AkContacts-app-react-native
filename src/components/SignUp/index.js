@@ -21,13 +21,13 @@ const RegisterComponent = ({onSubmit, onChange, form, error, errors}) => {
         <Text style={styles.title}>Welcome to AkContacts</Text>
         <Text style={styles.subTitle}>Create an Account</Text>
 
-        <View style={styles.form}>
+        <View form style={styles.form}>
           <Input
             label="Username"
             iconPosition="right"
             placeholder="Enter Username"
             onChangeText={value => {
-              onChange({name: 'userName', value: value});
+              onChange({name: 'userName', value});
             }}
             error={errors.userName}
           />
@@ -65,7 +65,7 @@ const RegisterComponent = ({onSubmit, onChange, form, error, errors}) => {
             icon={<Text>Show</Text>}
             iconPosition="right"
             onChangeText={value => {
-              onChange({name: 'fpassword', value});
+              onChange({name: 'password', value});
             }}
             error={errors.password}
           />
