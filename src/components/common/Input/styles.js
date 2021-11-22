@@ -14,7 +14,7 @@ export default StyleSheet.create({
     marginTop: 5,
   },
   inputContainer: {
-    paddingVertical: 12,
+    paddingVertical: 10,
   },
   textInput: {
     flex: 1,

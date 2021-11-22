@@ -8,7 +8,7 @@ const Input = ({
   iconPosition,
   icon,
   style,
-  text,
+  value,
   label,
   error,
   ...props
@@ -49,7 +49,7 @@ const Input = ({
         <TextInput
           style={[styles.textInput, style]}
           onChangeText={onChangeText}
-          value={text}
+          value={value}
           onFocus={() => {
             setFocused(true);
           }}

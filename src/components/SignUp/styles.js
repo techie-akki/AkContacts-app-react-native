@@ -11,17 +11,17 @@ export default StyleSheet.create({
   title: {
     fontSize: 21,
     textAlign: 'center',
-    paddingTop: 15,
+    paddingTop: 1,
     fontWeight: '500',
   },
   subTitle: {
     fontSize: 16,
     textAlign: 'center',
-    paddingVertical: 15,
+    paddingVertical: 10,
     fontWeight: '500',
   },
   form: {
-    paddingTop: 10,
+    paddingTop: 12,
   },
   createSection: {
     flexDirection: 'row',
@@ -33,5 +33,10 @@ export default StyleSheet.create({
     paddingLeft: 10,
     color: colors.primary,
     fontSize: 17,
+  },
+  errorText: {
+    color: colors.danger,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
 });
